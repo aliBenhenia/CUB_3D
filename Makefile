@@ -17,7 +17,7 @@ SRC =	cast_rays.c clean_data.c destroy.c clean_images_window.c \
 OBJ = $(SRC:.c=.o)
 
 all : $(NAME)
-
+ 
 $(NAME) : $(LIBPARS) $(LIBFT) $(OBJ)
 	@$(CC) $(OBJ)  $(LIBPARS) $(LIBFT)  $(CFLAGS_LINKING) -o $(NAME)
 	@echo "the executable $(NAME) has been created"
